@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ultimate To-Do List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <header id="main-header">
+        <h1 id="page-title">The Ultimate To-Do List</h1>
+        <p id="page-subtitle">Organize tasks, track progress, and achieve goals!</p>
+    </header>
+
+    <main>
+        <article id="todo" aria-labelledby="todo-title">
+            <h2 id="todo-title">To Do</h2>
+            <ul class="todo-list">
+                <li>Acessibility Assignment</li>
+                <li>Prototype Dining Page Assignment</li>
+                <li>CSS Cascade, Selection and Pseudo Selectors</li>
+                <li>Coding Assignment</li>
+                <li>Final Integrated Project</li>
+                <li>Part-Time Job</li>
+                <li>Preparing Stuffs</li>
+            </ul>
+        </article>
+    
+        <article id="inprogress" aria-labelledby="inprogress-title">
+            <h2 id="inprogress-title">In Progress</h2>
+            <ul class="inprogress-list">
+                <li>
+                    <input type="checkbox" id="progress1" aria-label="Review Meeting Agenda">
+                    <label for="progress1">Acessibility Assignment</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="progress2" aria-label="Polish Final Report">
+                    <label for="progress2">Preparing Stuffs</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="progress3" aria-label="Polish Final Report">
+                    <label for="progress3">Final Integrated Project</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="progress4" aria-label="Polish Final Report">
+                    <label for="progress4">Coding Assignment</label>
+                </li>
+            </ul>
+        </article>
+
+        <article id="done" aria-labelledby="done-title">
+            <h2 id="done-title">Done</h2>
+            <ul class="done-list">
+                <li>
+                    <input type="checkbox" id="done1" checked aria-label="Update LinkedIn Profile">
+                    <label for="done1">CSS Cascade, Selection and Pseudo Selectors</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="done2" checked aria-label="Submit Accessibility Homework">
+                    <label for="done2">Prototype Dining Page Assignment</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="done3" checked aria-label="Submit Accessibility Homework">
+                    <label for="done3">Part-Time Job</label>
+                </li>
+            </ul>
+        </article>
+
+        <section id="observations" aria-labelledby="observations-title">
+            <h2 id="observations-title">OBSERVATIONS</h2>
+            <details>
+                <summary>OBS 1</summary>
+                <h3>Drink Water</h3>
+                <p>Stay hydrated by drinking at least 3 liters of water daily.</p>
+            </details>
+            <details>
+                <summary>OBS 2</summary>
+                <h3>Exercise Regularly</h3>
+                <p>Maintain a healthy fitness routine even in challenging weather.</p>
+            </details>
+            <details>
+                <summary>OBS 3</summary>
+                <h3>Take Breaks</h3>
+                <p>Rest your eyes and stretch after long hours of work.</p>
+            </details>
+            <details>
+                <summary>OBS 4</summary>
+                <h3>Connect With Family & Friends</h3>
+                <p>Stay in touch with your loved ones to maintain emotional well-being.</p>
+            </details>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Ultimate To-Do List. Stay productive!</p>
+    </footer>
+</body>
+</html>
