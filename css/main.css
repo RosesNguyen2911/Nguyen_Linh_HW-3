@@ -144,6 +144,16 @@ ul li::before {
     margin-left: 10px;
 }
 
+/* Change background color of <li> when checkbox is checked */
+.inprogress-list input[type="checkbox"]:checked + label {
+    background-color: #D3F8E2; 
+}
+
+.done-list input[type="checkbox"]:checked + label {
+    background-color: #D3F8E2; 
+}
+
+
 /* Observations Section */
 #observations {
     background: #FFFFFF; /* White */
