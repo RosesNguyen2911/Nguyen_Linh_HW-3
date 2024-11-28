@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #d4b9b9; /* Light Beige */
+    background-image: url('../images/todolist_background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+/* Header Styling */
+header#main-header {
+    text-align: center;
+    background-color: #3A6351; /* Forest Green */
+    color: #FFFFFF; /* White */
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #A3BCB6; /* Muted Teal */
+}
+
+/* Main Section Layout */
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Article Styling */
+article {
+    background: #FFFFFF; /* White */
+    border: 2px solid #A3BCB6; /* Muted Teal */
+    border-radius: 10px;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+article h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3A6351; /* Forest Green */
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #F4A259; /* Warm Orange */
+    padding-bottom: 5px;
+}
+
+#todo h2::before {
+    content: "📝"; 
+}
+
+#inprogress h2::before {
+    content: "⏳";
+}
+
+#done h2::before {
+    content: "✅";
+}
+
+#observations h2::before {
+    content: "💡";
+}
+
+/* List Styling */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Alternating row colors for lists */
+.todo-list li:nth-child(odd),
+.inprogress-list li:nth-child(odd),
+.done-list li:nth-child(odd) {
+    background-color:lightgrey; /* Light Gray */
+}
+
+.todo-list li:nth-child(even),
+.inprogress-list li:nth-child(even),
+.done-list li:nth-child(even) {
+    background-color: #FFFFFF; /* White */
+}
+
+/* Hover effect for list items */
+ul li:hover {
+    background-color: #A3BCB6; /* Muted Teal */
+    color: #3A6351; /* White */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+ul li::before {
+    margin-right: 10px;
+    color: #F4A259; /* Warm Orange */
+}
+
+/* Checkbox Styling */
+.inprogress-list input[type="checkbox"]:checked + label {
+    color: #3A6351; /* Forest Green */
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.inprogress-list input[type="checkbox"]:checked + label::after {
+    content: "⏰";
+    color: #3A6351;
+    margin-left: 10px;
+}
+
+.done-list input[type="checkbox"]:checked + label {
+    color: #3A6351; /* Muted Teal */
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.done-list input[type="checkbox"]:checked + label::after {
+    content: "💯";
+    color: #3A6351;
+    margin-left: 10px;
+}
+
+/* Observations Section */
+#observations {
+    background: #FFFFFF; /* White */
+    border: 2px solid #F4A259; /* Warm Orange */
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 700px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+#observations h2 {
+    font-family: 'Poppins', sans-serif;
+    color: #3A6351; /* Forest Green */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+details {
+    background: #F7F7F7; /* Very Light Gray */
+    border: 2px solid #A3BCB6; /* Muted Teal */
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+details summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #3A6351; /* Forest Green */
+}
+
+details[open] summary {
+    color: #F4A259; /* Warm Orange */
+}
+
+details h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #3A6351; /* Forest Green */
+}
+
+details p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    background: #3A6351; /* Forest Green */
+    color: #FFFFFF; /* White */
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 30px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.1);
+}
